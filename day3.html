@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h2>Using call() method</h2>
+<script>
+
+// call() Function //
+//const person = {
+//    Pname: function() {
+//        console.log(this.name + " " + this.age);
+//        return this.age;
+//    }
+//}
+//const person1 = {
+//    name: "John",
+//    age: 25,
+//    city: "New York"
+//};
+//
+//person.Pname.call(person1);   // individual arguments 
+//person.Pname.apply(person1);  // array of arguments                                                                                                                                        
+
+// Iterator //
+//arr = [1,2,3,4,5,6,7,8,9,10]
+//for(item of arr) {
+//    console.log(item)
+//}
+//let iter = arr[Symbol.iterator]();
+
+//console.log(iter.next())
+//console.log(iter.next())
+//console.log(iter.next())
+//console.log(iter.next())
+//console.log(iter.next())
+//console.log(iter.next())
+//console.log(iter.next())
+//console.log(iter.next())
+//console.log(iter.next())
+//console.log(iter.next())
+//console.log(iter.next())
+
+//function *gen(){
+//    console.log("Hello")
+//    yield 1;
+//    console.log("World")
+//   yield 2;
+//    console.log("Goodbye")
+//}
+
+//const g = gen();
+//console.log(g.next())
+//console.log(g.next())
+//console.log(g.next())
+
+//let str = "";
+//for (let i = 1; i <= 1; i++) {
+//    for (let j = 1; j <= 1; j++) {
+//        str += "JS";
+//    }
+ //   str += "\n";
+//}
+//for (let i = 1; i <= 1; i++) {
+ //   for (let j = 1; j <= 2; j++) {
+  //      str += "JS";
+//    }
+  //  str += "\n";
+//}
+//for (let i = 1; i <= 1; i++) {
+//    for (let j = 1; j <= 3; j++) {
+//        str += "JS";
+//    }
+//   str += "\n";
+//}
+//for (let i = 1; i <= 1; i++) {
+//    for (let j = 1; j <= 4; j++) {
+//        str += "JS";
+ //   }
+
+//    str += "\n";
+//}
+//for (let i = 1; i <= 1; i++) {
+//    for (let j = 1; j <= 5; j++) {
+//       str += "JS";
+//    }
+//    str += "\n";
+//}
+//for (let i = 1; i <= 1; i++) {
+//    for (let j = 1; j <= 6; j++) {
+//        str += "JS";
+//   }
+//    str += "\n";
+//}
+//console.log(str);
+
+//Promise function //
+//function myDisplayer(some) {
+//console.log(some)
+//}
+//
+//let myPromise = new Promise(function(myResolve, myReject){
+//let x = 0;
+//
+//if (x == 0) {
+//myResolve("OK");
+//} else {
+//myReject("Error");
+//}
+//}
+//);
+//myPromise.then(
+//function(value) { myDisplayer(value); },
+//function(error) { myDisplayer(error); }
+//);
+//console.log(myPromise) // shows dropdown as it was an object
+//
+//function myDisplayer(some) {
+//    console.log(some)
+//}
+//
+//let myPromise = new Promise(function(myResolve, myReject){
+//    let x = prompt("Enter a Password")
+//    if (x == 9560) {
+//        myResolve("Correct Password");
+//    } else {
+//        myReject("Incorrect Password");
+//    }
+//}
+//);
+//
+//myPromise.then(
+//    (value)=> { myDisplayer(value); },
+//    (error)=> { myDisplayer(error); }
+//);
+//async function myFunction(){
+//    
+//    return "Hello";
+//}
+//
+//myFunction().then(
+//    function(value) { console.log(value); },
+//    function(error) { console.log(error); }
+//);
+//async function myFunction() {
+//    let pro = new Promise((resolve, reject) => {
+//        setTimeout(() => {
+//        resolve("Hello World inner");
+//        console.log("Hello World");
+//        }, 2000);
+//    });
+//
+//    let result = await pro;
+//    console.log(result);
+//}
+//myFunction().then(
+////    function(value) { console.log(value); },
+////    function(error) { console.log(error); }
+////);
+//
+//function fetchData(){
+//    return new Promise(resolve => {
+//        setTimeout(() => {
+//            resolve({data:"This is the fetched data"});
+//        }, 2000);
+//    });
+//}
+//async function processData(){
+//    try{
+//        console.log("Fetching data...");
+//        const result = await fetchData();
+//        console.log("Data fetched:",result.data);
+//        return result.data;
+//    }catch(error){
+//        console.error("Error fetching data:", error);
+//        throw error;
+//    }
+//}
+//
+//processData()
+//    .then(processedData => {
+//        console.log("Processed data:", processedData);
+//    })
+//    .catch(error => {
+//        console.error("Final error:", error);
+//    });
+//
+//
+//console.log(window)
+</script>
+</body>
+</html>

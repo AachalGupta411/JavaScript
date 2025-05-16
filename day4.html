@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Document</title>
+</head>
+<body>
+<h1>Day 4</h1>
+<script>
+//*** Create a function that takes two inputs hours and minutes and converts it into seconds print the result on dom ***//
+//let hours = prompt("Enter hours");
+//let minutes = prompt("Enter minutes");
+//let totalSeconds = convertToSeconds(hours, minutes);
+//function convertToSeconds(hours, minutes) {
+//    var hoursInSeconds = hours * 3600;
+//    var minutesInSeconds = minutes * 60;
+//    var totalSeconds = hoursInSeconds + minutesInSeconds;
+//    document.write("Total seconds: " + totalSeconds);
+//    return totalSeconds;
+//}
+//console.log(totalSeconds);
+
+//*** Create object and print its properties ***//
+//let person = {
+//    name: "John",
+//    age: 30,
+//    city: "New York",
+////console.log(person.name);
+////console.log(person.age);
+////console.log(person.city);
+//Pname: function() {
+//    console.log(this.name + " " + this.age);
+//    return this.age;
+//}
+//};
+//person.Pname();
+
+//*** Object constructor ***//
+//function person(name,age,city) {
+//    this.name = name;
+//    this.age = age;
+//    this.city = city;
+//}
+//
+//const p1 = new person("John", 30, "New York");
+//console.log(p1.name);
+//console.log(p1.age);
+//console.log(p1.city);
+//
+//person.prototype.con = "India"
+//console.log(p1.con);
+//
+
+class person{
+    constructor(name, age, city) {
+        this.name = name;
+        this.age = age;
+        this.city = city;
+}
+
+Pname() {
+    console.log(this.name + " " + this.age);
+    return this.age;
+    }
+}
+const p1 = new person("John", 30, "New York");
+console.log(p1);
+
+</script>
+</body>
+</html>
